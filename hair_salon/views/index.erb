@@ -4,7 +4,7 @@
 
   <ul>
     <% @stylists.each() do |stylist| %>
-      <li><a href="/<%= stylist.id() %>"><%= stylist.name() %></a></li>
+      <li><a href="/stylist/<%= stylist.id() %>"><%= stylist.name() %></a></li>
     <% end %>
   </ul>
 
@@ -20,5 +20,3 @@
     <button type="submit">Add Stylist</button>
   </div>
 </form>
-
-<a href="/">Return to a normal life</a>

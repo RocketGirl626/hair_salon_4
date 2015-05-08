@@ -1,0 +1,23 @@
+<h1> Stylist:<%= @stylist.name() %></h1>
+
+<h3>Edit Stylist:</h3>
+
+<form action="/stylist/<%= @stylist.id() %>" method="post">
+  <input name="_method" type="hidden" value="patch">
+  <div class="form-group">
+    <label for="name">Change Name:</label>
+    <input id="name" name="name" type="text">
+
+  </div>
+  <button type="submit">Update Book</button>
+</form>
+
+<h3>To delete this stylist, click the button below</h3>
+<form action="/stylist/<%= @stylist.id() %>" method="post">
+  <input name="_method" type="hidden" value="delete">
+
+  <button type="submit"> Delete Stylist</button>
+</form>
+
+
+<a href="/">Go back to home page</a> -->
